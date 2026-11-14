@@ -794,7 +794,7 @@ const CSS = `
 .mgn-traits>svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
 .mgn-portrait{position:absolute;left:27%;top:17%;width:46%;height:66%}
 .mgn-portrait-img{position:absolute;inset:0;overflow:hidden;border-radius:4px;background:color-mix(in oklab,var(--mgn-ink) 10%,var(--mgn-paper))}
-.mgn-portrait-img img{width:100%;height:100%;max-width:none;object-fit:cover;filter:grayscale(1) contrast(1.05);transform:scale(1.04);transition:filter .7s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.mgn-portrait-img img{width:100%;height:100%;max-width:none;object-fit:cover;filter:grayscale(0) contrast(1.05);transform:scale(1.04);transition:filter .7s ease,transform 1.2s cubic-bezier(.2,.7,.2,1)}
 .mgn-portrait:hover .mgn-portrait-img img{filter:grayscale(0) contrast(1);transform:scale(1.09)}
 .mgn-trait{position:absolute;transform:translate(-50%,-50%);font-size:clamp(17px,1.9cqi,27px);white-space:nowrap}
 .mgn-hello-copy .mgn-h2{font-size:clamp(64px,10.5cqi,180px)}
@@ -919,7 +919,7 @@ const CSS = `
 /* thanks */
 .mgn-thanks{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6cqi,110px);align-items:center;max-width:1500px;margin:0 auto;min-height:calc(var(--mgn-h) - 220px)}
 .mgn-avatar{position:relative;width:clamp(96px,10cqi,150px);aspect-ratio:1}
-.mgn-avatar img{width:100%;height:100%;max-width:none;object-fit:cover;border-radius:50%;filter:grayscale(1)}
+.mgn-avatar img{width:100%;height:100%;max-width:none;object-fit:cover;border-radius:50%;filter:grayscale(0)}
 .mgn-thanks-title{font-size:clamp(58px,7.8cqi,140px);margin:clamp(18px,2.4cqi,34px) 0 0;color:var(--fg)}
 .mgn-touch{margin-top:clamp(18px,2.2cqi,30px);display:grid;gap:6px;font-size:clamp(13px,1.08cqi,16px)}
 .mgn-touch b{font-weight:600}
