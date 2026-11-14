@@ -21,7 +21,7 @@ const PHONE_TEL = "tel:+918253090924"
 // 📸 PORTRAIT: this is a placeholder photo. To use your own, put your picture
 // at  public/portrait.jpg  and replace the line below with:
 //    const PORTRAIT = "./portrait.jpg"
-const PORTRAIT = "./portrait.jpg"
+const PORTRAIT = "./portrait2.jpg"
 
 export const content: MarginaliaPortfolioTemplateProps = {
   name: "Purva Bandhwar",
