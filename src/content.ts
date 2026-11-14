@@ -6,6 +6,8 @@
 import type { MarginaliaPortfolioTemplateProps } from "@/components/ui/marginalia-portfolio-template"
 
 const U = "https://images.unsplash.com/photo-"
+// Project artwork lives in public/img (drawn for each project)
+const I = (n: string) => "./img/" + n + ".svg"
 
 // 📁 Your Google Drive folder with every project in full detail
 const PROJECTS_DRIVE = "https://drive.google.com/drive/folders/18gRLUI9WlRVPX070i1KsNhi_0Kvx7n6M?usp=drive_link"
@@ -19,7 +21,7 @@ const PHONE_TEL = "tel:+918253090924"
 // 📸 PORTRAIT: this is a placeholder photo. To use your own, put your picture
 // at  public/portrait.jpg  and replace the line below with:
 //    const PORTRAIT = "./portrait.jpg"
-const PORTRAIT = U + "1580489944761-15a19d654956"
+const PORTRAIT = "./portrait.jpg"
 
 export const content: MarginaliaPortfolioTemplateProps = {
   name: "Purva Bandhwar",
@@ -75,8 +77,8 @@ export const content: MarginaliaPortfolioTemplateProps = {
   projectsNote: "five adventures (tap a phone!)",
   projects: [
     {
-      name: "The ₹4.48 Lakh Crore Balancing Act",
-      tagline: "Playing corporate accountant for a giant automotive empire.",
+      name: "The Balancing Act",
+      tagline: "The ₹4.48 lakh crore simulation: playing corporate accountant for an automotive empire.",
       kind: "Financial Accounting · Corporate Simulation (SMIL)",
       year: "2026",
       summary:
@@ -88,7 +90,7 @@ export const content: MarginaliaPortfolioTemplateProps = {
         { value: 1.3, decimals: 2, suffix: "x", label: "liquid asset cover ratio" },
         { value: 11.4, decimals: 1, suffix: "%", label: "tax efficiency via subsidiary dividends" },
       ],
-      images: [U + "1579783902614-a3fb3927b6a5", U + "1506126613408-eca07ce68773", U + "1544947950-fa07a98d237f"],
+      images: [I("ledger-1"), I("ledger-2"), I("ledger-3")],
       screens: ["stats", "cover", "detail"],
       accent: "#1d6f42",
       tag: "accounting",
@@ -107,30 +109,30 @@ export const content: MarginaliaPortfolioTemplateProps = {
         { value: 2, label: "bustling urban field sites explored" },
         { value: 100, suffix: "%", label: "ethical consent & qualitative integrity" },
       ],
-      images: [U + "1513364776144-60967b0f800f", U + "1541961017774-22349e4a1262", U + "1515886657613-9f3515b0c78f"],
+      images: [I("canvas-1"), I("canvas-2"), I("canvas-3")],
       screens: ["feed", "cover", "detail"],
       accent: "#c2410c",
       tag: "fieldwork",
       href: PROJECTS_DRIVE,
     },
     {
-      name: "Saving Ramesh’s Kirana Store",
-      tagline: "Building an autonomous AI sidekick for local neighborhood shops.",
+      name: "Ramesh’s Kirana",
+      tagline: "Saving Ramesh’s Kirana Store: an autonomous AI sidekick for local shops.",
       kind: "AI Agent Architecture · RAG & MCP Systems",
       year: "2026",
       summary:
         "Quick-commerce apps are stealing local store customers during festival seasons. To fight back, we architected an *autonomous AI agent* for Ramesh, a Bengaluru kirana owner, that reads inventory, picks festival offers, and drafts [bilingual WhatsApp posters] using RAG (Retrieval-Augmented Generation) and human-in-the-loop safeguards.",
       challenge: "Designing zero-jargon automation for busy store owners who don’t speak tech.",
       note: "Ramesh approves every poster",
-      images: [U + "1490481651871-ab68de25d43d", U + "1445205170230-053b83016050", U + "1495446815901-a7297e633e8d"],
+      images: [I("kirana-1"), I("kirana-2"), I("kirana-3")],
       screens: ["detail", "feed", "cover"],
       accent: "#5b63e6",
       tag: "AI agent",
       href: PROJECTS_DRIVE,
     },
     {
-      name: "The Smart Investment Advisor",
-      tagline: "Using calculus, matrices, and integrals to build the ultimate piggy bank.",
+      name: "The Smart Advisor",
+      tagline: "The Smart Investment Advisor: calculus, matrices and integrals as the ultimate piggy bank.",
       kind: "Mathematical Modeling · Wealth Optimization",
       year: "2026",
       summary:
@@ -141,22 +143,22 @@ export const content: MarginaliaPortfolioTemplateProps = {
         { value: 12.68, decimals: 2, suffix: "%", label: "effective yearly compound rate" },
         { value: 0.766, decimals: 3, label: "optimal stock weight via matrix inverse" },
       ],
-      images: [U + "1579783902614-a3fb3927b6a5", U + "1544947950-fa07a98d237f", U + "1506126613408-eca07ce68773"],
+      images: [I("calc-1"), I("calc-2"), I("calc-3")],
       screens: ["stats", "detail", "cover"],
       accent: "#2f4b7c",
       tag: "business maths",
       href: PROJECTS_DRIVE,
     },
     {
-      name: "Rhetoric, Power & 70-Hour Weeks",
-      tagline: "Deconstructing Narayana Murthy’s speeches using Aristotle’s persuasion playbook.",
+      name: "Rhetoric & Power",
+      tagline: "70-hour weeks, deconstructed with Aristotle’s persuasion playbook.",
       kind: "Rhetorical Analysis · Corporate Reputation",
       year: "2026",
       summary:
         "When Infosys co-founder N.R. Murthy sparked a national debate on 70-hour workweeks, our team unpacked the masterclass in persuasion. By analyzing his *Ethos* (elder statesman), *Logos* (productivity stats and Bayes’ theorem), and *Pathos* (patriotic sacrifice), we explored [how words shape national workplace culture].",
       challenge: "Separating economic productivity logic from modern workforce burnout anxiety.",
       note: "Aristotle would have had notes",
-      images: [U + "1495446815901-a7297e633e8d", U + "1515886657613-9f3515b0c78f", U + "1445205170230-053b83016050"],
+      images: [I("rhetoric-1"), I("rhetoric-2"), I("rhetoric-3")],
       screens: ["cover", "detail", "feed"],
       accent: "#7c3aed",
       tag: "rhetoric",
